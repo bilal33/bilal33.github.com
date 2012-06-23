@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[F# Survival guide revival]]></title>
   <link href="http://bilal33.github.com/atom.xml" rel="self"/>
   <link href="http://bilal33.github.com/"/>
-  <updated>2012-06-22T18:09:41-04:00</updated>
+  <updated>2012-06-22T23:47:25-04:00</updated>
   <id>http://bilal33.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Bilal Durrani]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
