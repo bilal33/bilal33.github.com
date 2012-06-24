@@ -8,13 +8,19 @@ comments: true
 
 <ul style="list-style:none">
 <li class="right">
-test
+next
 </li>
 <li style="float: right">
  | 
 </li>
     <li class="right">
-next
+previous
+    </li>
+    <li style="float:right">
+    |
+    </li>
+    <li class="right">
+    <a href="\fsurvival\toc">Main</a>    
     </li>
 </ul>
 
@@ -102,3 +108,21 @@ In this spirit, I recommend the following sites:
 + [Don Syme's Blog](http://blogs.msdn.com/b/dsyme/) (creator of F#)
 + [F# Programming on Wikibooks](https://en.wikibooks.org/wiki/F_Sharp_Programming)
 + [Real World Functional Programming](http://www.functional-programming.net/) by Tomas Petricek
+
+<ul style="list-style:none">
+<li class="right">
+next
+</li>
+<li style="float: right">
+ | 
+</li>
+    <li class="right">
+previous
+    </li>
+    <li style="float:right">
+    |
+    </li>
+    <li class="right">
+    <a href="\fsurvival\toc">Main</a>    
+    </li>
+</ul>
