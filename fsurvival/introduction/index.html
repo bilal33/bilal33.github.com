@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to functional programming - My blog</title>
+  <meta name="author" content="Bilal Durrani">
+
+  
+  <meta name="description" content="Introduction to Functional Programming next | previous | Main Introduction There are many ways to examine problems and model their solutions.
+In &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bilal33.github.com/fsurvival/introduction/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My blog</a></h1>
+  
+    <h2>My attempts</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bilal33.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+<li><a href="/">Blog</a></li>
+<!--  
+      <li><a href="/blog/archives">Archives</a></li>
+-->
+   <li> <a href="/fsurvival/toc">F# Survival Guide</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Introduction to Functional Programming</h1>
+    
+  </header>
+  
+  <p><link rel="stylesheet" type="text/css" href="/stylesheets/fsurvival.css"/></p>
+
+<ul style="list-style:none">
+<li class="right">
+next
+</li>
+<li style="float: right">
+ | 
+</li>
+    <li class="right">
+previous
+    </li>
+    <li style="float:right">
+    |
+    </li>
+    <li class="right">
+    <a href="\fsurvival\toc">Main</a>    
+    </li>
+</ul>
+
+
+<h2>Introduction</h2>
+
+<p>There are many ways to examine problems and model their solutions.
+In software, we tend to look at problems through the lens of our experiences and the tools that we have at our disposal.
+In other words, our experiences and the tools we know influence how we approach solving problems.
+For example, in the days of structured programming, we solved many problems using procedural decomposition and subroutines, focusing on internal cohesion and loose coupling.
+Building on these successful techniques, we transitioned to modeling solutions using objects and object-oriented techniques, further encapsulating imperative code and its data.</p>
+
+<p>While object-oriented design and object-oriented programming will continue to play a significant role in years to come,
+I believe we are facing challenges that require new ways of thinking and new ways of implementing solutions.
+For example, massive computing power via multi-core architectures and cloud computing will make developing concurrent systems and parallel algorithms a virtual necessity.
+Functional programming provides us with many of the tools and technique we need to make this a reality.
+Additionally, functional programming gives us new ways of developing scalable systems that are easy to debug and test.</p>
+
+<h2>Why This Book?</h2>
+
+<p>While there are several books in print, and some Web-based resources for learning F#, I have not found a single one that&#8217;s altogether clear, concise, and easily digestible by mainstream developers.
+Few, if any, of these resources takes a bottoms-up approach, methodically building up a conceptual and practical framework that builds skills and confidence in a systematic way.
+Additionally, most of the F# materials that I&#8217;ve read are to some extent academic, with a bent towards describing F# in terms of esoteric constructs
+(check out the Maybe monad on the Web for a good dose of newbie confusion!).
+In my (humble) opinion, much of the existing material doesn&#8217;t resonate naturally with OO application developers.
+These are the issues that I&#8217;ve tried to address with this book.</p>
+
+<p>Also, whenever I read technical books, I ultimately have questions that roll through my head as I go.
+The books I tend to love anticipate my <em>rolling questions</em> and answer them quickly and clearly.
+I will do my best to anticipate your rolling questions and answer them in kind.
+I&#8217;ve also made it a point to keep the chapters relatively short, covering one or two related topics at a time.</p>
+
+<p>Lastly, I tend to dislike books that introduce new concepts and syntax without first establishing a solid foundation.
+One of the goals I have for this book is to wait until I&#8217;ve covered a topic before using it in examples, etc.
+I get frustrated when books throw in a new concept in the middle of an example &#8211; it&#8217;s very distracting and usually takes away from the point that the author is trying to make.
+Therefore, I will use data structures, syntax and concepts only after we&#8217;ve discussed them.<br/>
+Because certain language features are so highly interconnected, this may not always be possible; however, I think we can go a long way here.</p>
+
+<p>Instead of lamenting over the dearth of palatable materials and complaining about what I don&#8217;t like (that&#8217;s too easy),
+I&#8217;ve decided to do something about it and contribute to the development community as best I can.
+I&#8217;ve chosen this particular topic because I feel quite strongly that functional programming will play prominently in the next decade of computing.
+Why? Two words: multicore processors.</p>
+
+<p>In order to increase compute speeds and throughput cycles, technology manufacturers such as Intel, AMD, Dell, HP, etc. have taken to shipping computers with multiple CPUs and CPUs with multiple cores.
+Given this trend, it is not unreasonable to assume that near-future desktops will contain 8, 16, 32 and more cores.<br/>
+Beyond the desktop, there is <strong>the cloud</strong>, with virtually unlimited computing resources available.</p>
+
+<p>In order to take advantage of all this computing power, we developers will need to think differently about how we design and write our software.
+I feel this way because writing concurrent, multi-process, multithreaded, asynchronous applications is already famously difficult, and it will only become more so with the continued scale and
+adoption of compute-rich hardware.</p>
+
+<p>By learning functional programming concepts in the context of a rich, fully-supported language and tool chain, and learning how to apply these properly,
+you are well on your way to preparing for the next generation of software development.</p>
+
+<h2>Intended Audience</h2>
+
+<p>This book is intended for professional software developers, students of computer science, and advanced enthusiasts who want to gain a foundation in functional programming and fluency in F#.
+It will be especially useful to those coming from a mainstream imperative/OO background.
+I have found that the <em>functional guys</em> love to explain things in mathematical and sometimes obtuse terms.
+I don&#8217;t think that it&#8217;s intentional &#8211; it stems from what the Heath brothers call <em>the curse of knowledge</em> in their (wonderful) book <a href="https://en.wikipedia.org/wiki/Made_to_Stick">Made to Stick</a>.
+Coming from an imperative/OO background myself, I know how <em>we</em> think about problems, hopefully explaining things in terms that are somewhat familiar and comfortable to you.</p>
+
+<p>I assume that you have developed software in the past, and have a working understanding of fundamental programming concepts such as variables, conditional structures, expressions, loops,
+collections, linked lists, etc.
+You will have programmed in C, C++, Python, etc.
+I also assume that you are familiar with at least one object-oriented language such as C++, C#, Java, etc.<br/>
+Lastly, to get the most out of this book, you should be familiar with core .NET programming concepts and libraries.</p>
+
+<h2>About the Authors</h2>
+
+<p>John Puopolo has been developing software professionally for over 20 years. He started developing on IBM AS/400s in C and quickly moved to the then-new PC platform and Windows (3.1).<br/>
+Over the years, John has developed enterprise software for financial institutions, consumer applications, mobile carriers and handset OEMs, enterprise search, GPS and LBS systems,
+and most recently, leads a team in the design and development of a next-generation ad network.
+He has practical and professional experience developing in C, C++, Java, Python, C# and F#.
+He lives outside of Boston, MA with his wife Jill, three daughters, and a funny little dog named Sugar.
+For feedback and comments, please leave a comment on the blog.</p>
+
+<p>Sandy Squires is a software consultant with more than 20 years experience.<br/>
+He has worked on developing systems of all different sizes - mainframe, minicomputer, PC, mobile, and embedded in more than 20 different computer languages.<br/>
+Sandy enjoys working on scientific and applied engineering systems, especially designing algorithms for digital signal processing, computational geometry, and machine vision.<br/>
+He resides in the greater Boston area with his wife, Susan, three daughters, a dog named Chaos, and two cats.</p>
+
+<h2>Useful Links and Resources</h2>
+
+<p>While there are many F# resources on the Web, they are at different stages of maturity and complexity.</p>
+
+<p>As you are coming up to speed, I recommend sticking to a small set of recognized sites, and branching out as you become more comfortable with the material.
+In this spirit, I recommend the following sites:</p>
+
+<ul>
+<li><a href="http://msdn.microsoft.com/en-us/vstudio/hh388569.aspx">Microsoft F# Developer Center</a></li>
+<li><a href="http://blogs.msdn.com/b/dsyme/">Don Syme&#8217;s Blog</a> (creator of F#)</li>
+<li><a href="https://en.wikibooks.org/wiki/F_Sharp_Programming">F# Programming on Wikibooks</a></li>
+<li><a href="http://www.functional-programming.net/">Real World Functional Programming</a> by Tomas Petricek</li>
+</ul>
+
+
+<ul style="list-style:none">
+<li class="right">
+next
+</li>
+<li style="float: right">
+ | 
+</li>
+    <li class="right">
+previous
+    </li>
+    <li style="float:right">
+    |
+    </li>
+    <li class="right">
+    <a href="\fsurvival\toc">Main</a>    
+    </li>
+</ul>
+
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal33.github.com/fsurvival/introduction/index.html" data-via="" data-counturl="http://bilal33.github.com/fsurvival/introduction/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Bilal Durrani -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

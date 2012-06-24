@@ -1,0 +1,8 @@
+li.right
+{
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
+    display :inline;
+}
+    
