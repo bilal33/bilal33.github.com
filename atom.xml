@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[F# Survival guide revival]]></title>
+  <title><![CDATA[My blog]]></title>
   <link href="http://bilal33.github.com/atom.xml" rel="self"/>
   <link href="http://bilal33.github.com/"/>
-  <updated>2012-06-22T23:59:11-04:00</updated>
+  <updated>2012-06-23T23:51:01-04:00</updated>
   <id>http://bilal33.github.com/</id>
   <author>
     <name><![CDATA[Bilal Durrani]]></name>
@@ -12,5 +12,168 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Where has all the money in the world gome]]></title>
+    <link href="http://bilal33.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone/"/>
+    <updated>2012-06-23T22:52:00-04:00</updated>
+    <id>http://bilal33.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone</id>
+    <content type="html"><![CDATA[<p>I found this incredibly detailed <a href="http://www.reddit.com/r/finance/comments/utf5u/where_has_all_the_money_in_the_world_gone/">post</a> about the origins of money on reddit that deserved to be repeated.
+The commentor <a href="http://www.reddit.com/user/otherwiseyep">otherwiseyep</a> has to break down the explation over a series of comments, so here I present his entire response in a easier to read format.
+Again, I am taking no credit for this, I am merely repeating his reponse.</p>
+
+<h2>Explaining monetary policy to a 5 year old</h2>
+
+<p>It&#8217;s hard to explain this to a five-year-old, because there are some fairly abstract concepts involved, but here goes&#8230;
+All actual &#8220;money&#8221; is debt. All of it, including monetary gold, etc. (Don&#8217;t argue with me yet, I&#8217;ll get to that.)
+Imagine a pretend world with no money, some kind of primitive villiage or something. Now let&#8217;s invent paper money. You can&#8217;t just print a bunch of paper that says people have to give you stuff, because nobody would honor it. But you could print IOUs. Let&#8217;s walk through this&#8230;</p>
+
+<ul>
+<li><p>Let&#8217;s say you&#8217;re an apple-farmer and I&#8217;m a hunter. You want some meat but haven&#8217;t harvested your crops yet. You say to me, &#8220;hey, go hunt me some meat and I&#8217;ll give you 1/10th of my apple harvest in the fall&#8221;. Fair enough, I give you meat, you owe me apples. There&#8217;s probably a lot of this kind of stuff going on, in addition to normal barter. In time, standard <em>prices</em> start to emerge: a deer haunch is worth a bushel of apples, or whatever.</p></li>
+<li><p>Now, let&#8217;s say a week later, I realize that my kid needs a new pair of shoes more than I need a bushel of apples. I come back to you and say, &#8220;Hey remember that bushel of apples you owe me? Could you write a marker, redeemable for one bushel of apples, that I can give to the shoemaker in trade for a pair of shoes?&#8221; You say okay, and we have invented a transferable note, something a lot like money.</p></li>
+<li><p>In time, our little villiage starts to figure out that a note redeemable for a bushel of apples can be swapped for all kinds of things. The fisherman who doesn&#8217;t even like apples will accept apple-certificates in trade for fish, because he knows he can trade them to boat-builder who loves apples. In time, you can even start to hire farm-workers without giving them anything except a note promising a cut of the future harvest.</p></li>
+</ul>
+
+
+<p>Now, you are issuing debt: a promise to provide apples. The <em>money</em> is a transferable IOU &#8211; your workers get a promise to provide value equal to a day of farm-work, or whatever, and it&#8217;s transferrable, so they can use it to buy whatever they want. The worker gets fish from the fisherman, not in exchange for doing any work or giving him anything he can use, but in exchange for an IOU that the fisherman can redeem anywhere.</p>
+
+<p>So far so good. But there are a couple of forks in the road here, on the way to a realistic monetary system, that we&#8217;ll address separately:</p>
+
+<p>What happens if your apple orchard is destroyed in a wildfire? Suddenly all the notes that everyone has been trading are basically wiped out. It didn&#8217;t <em>go</em> anywhere, it&#8217;s just gone, it doesn&#8217;t exist. Real value was genuinely destroyed. There is no thermodynamic law of the conservation of monetary value&#8211; just as you and I created it by creating transferable debt, it can also be genuinely destroyed. (We&#8217;ll get back to this in a minute, it gets interesting).</p>
+
+<p>The second issue is that, in all probability, the whole town is not just trading apple-certificates. I could also issue promises to catch deer, the fisherman could issue promises of fish, and so on.
+This could get pretty messy, especially if you got the notion to issue more apple-certificates than you can grow: you could buy all kinds of stuff with self-issued debt that you
+could never repay, and the town wouldn&#8217;t find out until harvest-time comes.
+Once again, value has been &#8220;destroyed&#8221; people worked and made stuff and gave you stuff in exchange for something that doesn&#8217;t exist, and will never exist.
+All that stuff they made is gone, you consumed it, and there is nothing to show for it.</p>
+
+<p>The above two concerns are likely to become manifest in our village sooner or later, and probably sooner.
+This leads to the question of credit, which is, at its most basic, a measure of credibility. Every time you issue an apple-certificate, you are borrowing, with a promise to repay from future apple-harvests.</p>
+
+<p>After the first couple of town scandals, people will start taking a closer look at the credibility of the issuer.
+Let&#8217;s say the town potato-farmer comes up with a scheme where his potato-certificates are actually issued by some credible third-party, say the town priest or whatever,
+who starts every growing season with a book of numbered certificates equal to the typical crop-yield and no more, and keeps half of the certificate on file, issuing the other half.
+Now there is an audit trail and a very credible system that is likely to earn the potato-grower a lot of credit, compared to other farmers in town.
+That means that the potato-grower can probably issue more notes at a better exchange rate than some murkier system.
+Similarly, the town drunk probably won&#8217;t get much value for his certificates promising a ship of gold.</p>
+
+<p>Now we have something like a credit market emerging, and the potato-farmer is issuing something closer to what we might call a modern <em>bond</em>&#8230;</p>
+
+<p>So some time goes by and people start catching onto this system of credit-worthiness, and farmers and fishermen and so on start to realize that they can get better value for their IOUs by demonstrating credibility.
+People with shakier reputations or dubious prospects may not be able to <em>issue money</em>, or might only be able to do so at very high <em>interest</em>.
+E.g., a new farmer with no track-record might have to promise me twice as many potatoes in exchange for a deer haunch, due to the risk that I might never see any potatoes at all.</p>
+
+<p>This obviously gets very messy fast, as different apple- and potato-certificates have different values depending on whether they were issued by Bob or Jane,
+and everyone has to keep track of and evaluate whose future apples are worth what.</p>
+
+<p>Some enterprising person, maybe the merchant who runs the trading-post, comes up with the idea to just issue one note for all the farms in town.
+He calls a meeting with all the farmers, and proposes to have the town priest keep a book of certificates and so on,
+and the farmers will get notes just like everyone else in exchange for the crops they contribute to the pool,
+and the merchant will keep a cut of the crops with which to hire some accountants and farm-surveyors to estimate the total crop yields across town and so on.</p>
+
+<p>Everyone agrees (or at least, enough farmers agree to kind of force the other ones to get on-board if they want to participate meaningfully in the town economy),
+and we now have something like a central bank issuing something like fiat currency: that is, currency whose value is <em>decided</em> by some central authority,
+as opposed to the kind of straight-up exchange certificates that can be traded for an actual apple from the issuer, for example.</p>
+
+<p>Now we have something that looks a lot like a modern monetary system. The town can set up audit committees or whatever, but the idea is that there is some central authority basically tasked with issuing money,
+ and regulating the supply of that money according to the estimated size of ongoing and future economic activity (future crop yields).
+If they issue too much money, we get inflation, where more apple-certificates are issued than apples grown, and each apple-note ends up being worth only three-quarters of an apple come harvest-time.
+If they issue too little currency, economic activity is needlessly restricted: the farmers are not able to hire enough workers to maximize crop yields and so on,
+the hunter starts hunting less because his deer meat is going bad since nobody has money to buy it, and so on.</p>
+
+<p><strong>At this point, you may be asking, &#8220;Why the hell go through all this complexity just to trade apples for deer and shoes? Isn&#8217;t this more trouble than it&#8217;s worth?&#8221;</strong></p>
+
+<p>The answer is because this is a vastly more efficient system than pure barter.
+I, as a hunter, no longer need to trade a physical deer haunch for a bushel of apples to carry over to the shoemaker in order to get shoes.
+You, as an apple-farmer, can hire workers before the crop is harvested, and therefore can grow more,
+and your workers can eat year-round instead of just getting a huge pile of apples at harvest-time to try and trade for for whatever they will need for the rest of the year.</p>
+
+<p>So back to money&#8230;</p>
+
+<p>The thing to remember is that all throughout, from the initial trade to this central-banking system, all of this money is debt.
+It is IOUs, except instead of being an IOU that says &#8220;Kancho_Ninja will give one bushel of apples to the bearer of this bond in October&#8221;,
+it says <strong>&#8220;Anyone in town will give you anything worth one bushel of apples in trade.&#8221;</strong></p>
+
+<p>The money is not an actual thing that you can eat or wear or build a house with, it&#8217;s an IOU that is redeemable anywhere, for anything, from anyone.
+It is a promise to pay equivalent value at some time in the future, except the holder of the money can call on anybody at all to fulfill that promise &#8211; they don&#8217;t have to go back to the original promiser.</p>
+
+<p>This is where it starts getting interesting, and where we can start to answer your question&#8230;</p>
+
+<p>(for the sake of simplicity, let&#8217;s stop calling these notes &#8220;apple certificates&#8221;, and pretend that the village has decided to call them &#8220;Loddars&#8221;).</p>
+
+<p>So now you&#8217;re still growing apples, but instead of trading them for deer-haunches and shoes, you trade them for Loddars. So far, so good.</p>
+
+<p>Once again, you want some meat, except harvest time hasn&#8217;t come yet so you don&#8217;t have any Loddars to buy meat with.
+You call me up (cellphones have been invented in this newly-efficient economy), &#8220;Hey otherwiseyep, any chance you could kill me a deer and I&#8217;ll give you ten Loddars for it at harvest-time?&#8221;
+I say, &#8220;Jeez, I&#8217;d love to, but I really need all the cash I can get for every deer right now: my kid is out-growing shoes like crazy.
+Tell you what: if you can write me a promise to pay twelve Loddars in October, I can give that to the shoe-maker.&#8221; You groan about the <em>interest rate</em> but agree.</p>
+
+<p>Did a lightbulb just go off?
+<strong>You and I have once again created Money.</strong>
+Twelve loddars now exist in the town economy that have not been printed by the central bank.</p>
+
+<p>Counting all the money trading hands in the village, there are now</p>
+
+<ul>
+<li>all the loddars that have ever been printed, plus</li>
+<li>twelve more that you have promised to produce.</li>
+</ul>
+
+
+<p>This is important to understand: I just spent money on shoes, which you spent on deer meat, that has never been printed.
+It&#8217;s obviously not any of the banknotes that have already been issued, but it&#8217;s definitely real money, because I traded it for new shoes, and you traded it for a dead deer.
+Once you and I and others start to catch on that this is possible, that we can spend money that we don&#8217;t have and that hasn&#8217;t even been printed yet,
+it is entirely possible for a situation to arise where the total amount of money changing hand in the village vastly exceeds the number of loddars that have actually been printed.
+And this can happen without fraud or inflation or anything like that, and can be perfectly legitimate.</p>
+
+<p>Now, what happens if another wildfire hits your orchard?
+Those twelve loddars are destroyed, they are gone, the shoe-maker is twelve loddars poorer, without spending it and without anyone else getting twelve loddars richer.</p>
+
+<p>The money that bought your deer and my shoes has simply vanished from the economy, as though it never existed, despite the fact that it bought stuff with genuine economic utility and value.</p>
+
+<p><strong>Sidebar on gold and gold-backed currency and stuff like that:</strong></p>
+
+<p>Because I said I would get to it&#8230;</p>
+
+<p>The above pretend history of the pretend village is not how modern money actually came to be.
+In reality, things are much less sequential and happen much more contemporaneously without the <em>eureka!</em> moments.
+The above was a parable to illustrate how money works to a 5-year-old, not an actual history of how money emerged.
+Until fairly recent times, paper money was not really very useful or practical for most purposes, especially if you wanted to spend money in a different village than where it was printed.
+If we go back in time a period before ATMs, wire-transfers, widespread literacy, etc, then a piece of paper written in Timbuktu is not likely to get you very far in Kathmandu.
+You could take your apples and deer-haunches and shoes around with you to trade,
+but the earliest naturally-emerging currencies tend to be hard things that were rare and easily-identifiable (jewels, colored shells, etc), and
+they frequently coincided with the personal decorations of the rich, in a self-reinforcing feedback loop
+(people with a surplus of time and food could decorate themselves with pretty things,
+which became valuable as status symbols, which made them more valuable as decorations, which made them more valuable as barter objects, which made them more prestigious shows of wealth, etc).</p>
+
+<p>Gold emerged as a sort of inevitable global currency, before people even thought of it as currency.
+It is rare, portable, easy to identify, can easily be made into jewelry, and can be easily quantified (unlike, say, jewels or seashells, which are harder to treat as a &#8220;substance&#8221;).
+Once word got around that rich people like it, it became easy to barter with anyone, anywhere, for anything.</p>
+
+<p>In the early stages, it was not really the same thing as <em>money</em>, it was just an easy thing to barter. But it had money-like characteristics:</p>
+
+<ul>
+<li><p>If someone walked into your apple-orchard offering to trade a yellow rock for apples,
+you might look at them a little funny. What use does an apple-grower have for a yellow rock?</p></li>
+<li><p>But if you know that rich people in town covet this soft yellow metal as something they can make jewelry out of, then you might be happy to trade apples for it.</p></li>
+<li>Once everyone knows that rich people will trade for this stuff, it becomes something like actual currency:
+neither the hunter, the shoemaker, nor the fisherman in town has much use for it, but because they know they can redeem it for the stuff they do want and need,
+it becomes a sort of transferable IOU that can be redeemed anywhere, i.e., money.</li>
+</ul>
+
+
+<p>The early history of paper money did not evolve the way I described in the earlier posts (although it could have, and would have got to the same place).
+Instead, the early history of paper money was certificates issued by storage-vaults of precious metals (i.e., early <em>banks</em>).
+Instead of carrying around yellow and silver rocks, you could deposit them somewhere and get a piece of paper entitling the holder to withdraw a certain quantity of gold or silver or whatever.</p>
+
+<p>Pre-1934 dollars, like virtually all paper currency until fairly recently, could be redeemed for physical gold or silver at a Federal Reserve Bank, and dollars were only
+printed if the treasury had enough physical gold and silver to <em>pay off</em> the bearer with precious metals.</p>
+
+<p>For a whole lot of reasons that are topics for another discussion, decisions were made that eventually led to the abandonment of the <em>gold standard</em> and now the dollar,
+like most modern currencies, is pure fiat paper: it&#8217;s only <em>worth</em> whatever everyone agrees it is worth,
+and can only be <em>redeemed</em> by trading it to someone else for whatever they will give you for it.
+There are long, loud, and ongoing feuds over whether that was a good idea, and I&#8217;m not going to get into that here.</p>
+]]></content>
+  </entry>
   
 </feed>
