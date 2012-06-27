@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Introduction to functional programming"
+title: "Introduction"
 sidebar: false
 comments: true
 ---
@@ -8,7 +8,7 @@ comments: true
 
 <ul style="list-style:none">
 <li class="right">
-next
+<a href="\fsurvival\whatisfunctional\">next</a>
 </li>
 <li style="float: right">
  | 
