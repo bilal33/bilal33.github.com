@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to F# & Essential tools - My blog</title>
+  <meta name="author" content="Bilal Durrani">
+
+  
+  <meta name="description" content="Introduction to F# & Essential Tools Introduction In this chapter, we introduce the F# language and learn how to get our first program up and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bdurrani.github.com/fsurvival/introtof/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My blog</a></h1>
+  
+    <h2>My attempts</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bdurrani.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+<li><a href="/">Blog</a></li>
+<!--  
+      <li><a href="/blog/archives">Archives</a></li>
+-->
+   <li> <a href="/fsurvival/preface">F# Survival Guide</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Introduction to F# & Essential Tools</h1>
+    
+  </header>
+  
+  <h2>Introduction</h2>
+
+<p>In this chapter, we introduce the F# language and learn how to get our first program up and running.
+In doing so, we will discuss the basic rules around F# program structure and the essential tools you will need to develop rudimentary applications.
+As we progress through the book, and our experience grows, we will delve more deeply into code examples, tool examples, etc.</p>
+
+<h2>Overview of F</h2>
+
+<p>F# is a strongly typed, first-class .NET programming language designed by Don Syme and others at Microsoft Research.
+It has its origins in the <a href="http://en.wikipedia.org/wiki/ML_programming_language">ML approach to language design</a> and is a close relative of <a href="http://en.wikipedia.org/wiki/OCaml">OCaml</a>.</p>
+
+<p>While billed primarily as a functional language, F# is in actuality a multi-paradigm language.
+This means that it supports imperative, OO, and functional styles of programming.
+A fully supported .NET language in its own right, F# interoperates naturally with code written in other .NET languages such as C# and VB.NET.</p>
+
+<p>F# is available as part of Microsoft Visual Studio 2010.
+You can find the most recent F# Language Reference <a href="http://msdn.microsoft.com/en-us/library/dd233181">here</a>.
+For this book, all the code was tested with build 4.0.40219.1 in Visual Studio 2010.</p>
+
+<p>Please consult the language reference for the basic rules and regulations of F#, e.g. the rules around defining a valid symbolic name, etc.</p>
+
+<h2>F# Program Structure</h2>
+
+<p>You create F# programs using a standard text editor or IDE. With an IDE such as Visual Studio 2010, you get the benefit of syntax highlighting, IntelliSense, etc.
+As with other programming languages, F# adheres to a specific set of syntax and structural rules, uses a well-defined set of keywords, etc.
+We will cover the core keywords, syntax, and structure of F# programs starting in this chapter, and will continue to build on this knowledge throughout the rest of the text.</p>
+
+<h3>#light</h3>
+
+<p>Due to its heritage, F# is compatible with OCaml. This means that you can write F# programs that are fully compliant with OCaml&#8217;s syntax and semantic rules.
+Many developers, however, find OCaml&#8217;s syntax to be quite <em>chatty</em> or <em>heavy</em>;
+therefore, F# supports a more streamlined programming syntax and semantic, known as <strong>light</strong> mode.
+You instruct F# to adhere to this light mode by placing the #light directive at the top of each of your F# program files.</p>
+
+<p>For all intents and purposes, all of the F# programs that you encounter and write will use the #light directive.
+If you fail to use place the #light directive at the top of each of your F# program files, you will default to OCaml-compatible <em>verbose mode.</em>
+This will require the use of particular keywords and symbols to terminate expressions, etc.<br/>
+In the spirit of keeping things streamlined and to the point, we will not cover the verbose mode syntax in this book, nor will we cover structures and/or symbols that are in F# solely
+to support OCaml compatibility.</p>
+
+<h3>Whitespace Matters</h3>
+
+<p>When you write F# programs and use the #light[1] directive, whitespace becomes significant to the structure and execution of the program.
+Whereas other languages, e.g. C#, use braces or other symbols to group compound statements, F# uses whitespace indentation for the same purpose.[2]</p>
+
+<p>Code that is vertically aligned by whitespace indentation is considered to be semantically related.
+Python programmers will feel right at home with this concept.
+Note that F# does not recognize TAB as a valid whitespace character when used for aligning code blocks in #light mode.
+This means that you need to use spaces to align your code. Before you groan too loudly, read the next two points:</p>
+
+<ol>
+<li>The number of spaces doesn&#8217;t seem to matter. You can use 1 or more. I typically use 4, which matches the equivalent TAB.</li>
+<li>When working in a Visual Studio F# Project (more on this shortly), the IDE converts TAB to spaces automatically.
+So, you can use the TAB key to align your code, and Visual Studio does the right thing in terms of ensuring your F# files have the right kind of whitespace.<br/>
+I assume you can set up your editor of choice to replace TABs with spaces as well.</li>
+</ol>
+
+
+<h3>Comments</h3>
+
+<p>F# provides several different types of comment structures: single line comments, multiline comments and document (doc) comments.
+Let&#8217;s take a look at each type below.</p>
+
+<h4>Single Line Comments</h4>
+
+<p>Single line comments begin with a //. Everything following the // is considered to be a comment. The comment extends to the end of the source code line.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// This is a single-comment. Everything from the start is treated as a comment.</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Multiline Comments</h4>
+
+<p>Multiline comments begin with (<em> and end with </em>).</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(* This is a multiline comment with only one line *)
+</span><span class='line'>(* This is another
+</span><span class='line'>multiline comment *)</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Document (Doc) Comments</h4>
+
+<p>Doc comments start with &#8216;///&#8217; and are used to embed comments in the code from which XML or HTML documentation can be produced automatically.
+These comments are normally placed before the definitions of functions, data types, classes, discriminated unions, etc.
+We will discuss each of these structures in depth in future chapters.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/// This is a doc comment that can be converted to useful documentation.</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Keywords</h3>
+
+<p>F# has a small set of reserved keywords.
+These keywords cannot be used as value or identifier names, as they have special meaning to the compiler:</p>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bdurrani.github.com/fsurvival/introtof/index.html" data-via="" data-counturl="http://bdurrani.github.com/fsurvival/introtof/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Bilal Durrani -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

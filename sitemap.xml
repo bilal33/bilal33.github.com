@@ -2,28 +2,36 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://bilal33.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone/
+            http://bdurrani.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone/
         </loc>
         <lastmod>2012-06-23T23:51:01-04:00</lastmod>
     </url>
     <url>
-        <loc>http://bilal33.github.com/blog/archives/</loc>
+        <loc>http://bdurrani.github.com/blog/archives/</loc>
         <lastmod>2012-06-23T23:51:01-04:00</lastmod>
     </url>
     <url>
-        <loc>http://bilal33.github.com/fsurvival/introduction/</loc>
-        <lastmod>2012-06-24T16:32:12-04:00</lastmod>
+        <loc>http://bdurrani.github.com/fsurvival/introduction/</loc>
+        <lastmod>2012-06-25T19:53:56-04:00</lastmod>
     </url>
     <url>
-        <loc>http://bilal33.github.com/fsurvival/preface/</loc>
-        <lastmod>2012-06-24T18:03:26-04:00</lastmod>
+        <loc>http://bdurrani.github.com/fsurvival/introtof/</loc>
+        <lastmod>2012-06-27T23:42:21-04:00</lastmod>
     </url>
     <url>
-        <loc>http://bilal33.github.com/fsurvival/toc/</loc>
-        <lastmod>2012-06-24T12:20:50-04:00</lastmod>
+        <loc>http://bdurrani.github.com/fsurvival/preface/</loc>
+        <lastmod>2012-06-24T18:08:41-04:00</lastmod>
     </url>
     <url>
-        <loc>http://bilal33.github.com/</loc>
+        <loc>http://bdurrani.github.com/fsurvival/toc/</loc>
+        <lastmod>2012-06-26T22:38:34-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bdurrani.github.com/fsurvival/whatisfunctional/</loc>
+        <lastmod>2012-06-26T22:26:58-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bdurrani.github.com/</loc>
         <lastmod>2012-06-23T23:51:01-04:00</lastmod>
     </url>
 </urlset>

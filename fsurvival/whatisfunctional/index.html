@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to functional programming - My blog</title>
+  <meta name="author" content="Bilal Durrani">
+
+  
+  <meta name="description" content="Introduction to Functional Programming next | previous | Main Introduction There are many ways to examine problems and model their solutions.
+In &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bdurrani.github.com/fsurvival/whatisfunctional/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My blog</a></h1>
+  
+    <h2>My attempts</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bdurrani.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+<li><a href="/">Blog</a></li>
+<!--  
+      <li><a href="/blog/archives">Archives</a></li>
+-->
+   <li> <a href="/fsurvival/preface">F# Survival Guide</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Introduction to Functional Programming</h1>
+    
+  </header>
+  
+  <p><link rel="stylesheet" type="text/css" href="/stylesheets/fsurvival.css"/></p>
+
+<ul style="list-style:none">
+<li class="right">
+<a href="\fsurvival\next">next</a>
+</li>
+<li style="float: right">
+ | 
+</li>
+    <li class="right">
+<a href="\fsurvival\introduction">previous</a>
+    </li>
+    <li style="float:right">
+    |
+    </li>
+    <li class="right">
+    <a href="\fsurvival\toc">Main</a>    
+    </li>
+</ul>
+
+
+<h2>Introduction</h2>
+
+<p>There are many ways to examine problems and model their solutions.
+In software, we tend to look at problems through the lens of our experiences and the tools that we have at our disposal.
+In other words, our experiences and the tools we know influence how we approach solving problems.
+For example, in the days of structured programming, we solved many problems using procedural decomposition and subroutines, focusing on internal cohesion and loose coupling.
+Building on these successful techniques, we transitioned to modeling solutions using objects and object-oriented techniques, further encapsulating imperative code and its data.</p>
+
+<p>While object-oriented design and object-oriented programming will continue to play a significant role in years to come,
+I believe we are facing challenges that require new ways of thinking and new ways of implementing solutions.
+For example, massive computing power via multi-core architectures and cloud computing will make developing concurrent systems and parallel algorithms a virtual necessity.
+Functional programming provides us with many of the tools and technique we need to make this a reality.
+Additionally, functional programming gives us new ways of developing scalable systems that are easy to debug and test.</p>
+
+<h2>What is Functional Programming?</h2>
+
+<p>Functional programming is a specific way to look at problems and model their solutions.
+Pragmatically, functional programming is a coding style that exhibits the following characteristics:</p>
+
+<ul>
+<li>power and flexibility &#8211; we can solve many general real-world problems using functional constructs</li>
+<li>simplicity &#8211; most functional programs exhibit a small set of keywords and concise syntax for expressing concepts</li>
+<li>suitable for parallel processing &#8211; via immutable values and operators, functional programs lend themselves to asynchronous and parallel processing</li>
+</ul>
+
+
+<p>Functional programming treats computation, e.g., running a program or solving a numeric calculation, as the evaluation of functions.
+Not surprisingly, in dealing with functional programming, we will use the term function quite often and in many contexts.</p>
+
+<p>So, before we continue, let&#8217;s make sure we understand what a function is:</p>
+
+<p><em>A function is fundamentally a transformation</em>. It transforms one or more inputs into exactly one output.</p>
+
+<p>An important property of pure functions is that they yield no side effects.
+This means that the same inputs will always yield the same outputs, and that the inputs are not changed as a result of the function.
+This idea of <em>no side effects</em> is one (of several) that makes functional programming particularly attractive when writing multi-process and multithreaded systems.
+As we go through the book, I will point out and explain the key concepts that make functional programming attractive for solving certain types of problems.</p>
+
+<h4>Purely Functional?</h4>
+
+<blockquote><p>Some programming languages are <em>purely functional languages.</em> This means that they follow strict functional rules, e.g.,
+no imperative looping constructs and no implicit way to introduce state changes.
+For example, Haskell, a pure functional language, disallows state changes and side effects altogether.
+Programs written in pure functional languages are almost solely made up of functions that accept arguments and return values.
+Unlike imperative and object-oriented languages, they allow no side effects and use recursion instead of loops for iteration.
+Languages like Haskell are often criticized as being too extreme in not allowing side effects, giving them limited penetration in mainstream development environments.<br/>
+Operations such as reading a file become awkward to code in a language where no side effects are allowed.
+In contrast, impure, multi-paradigm languages such as F# discourage side effects and imperative constructs, but make them available alongside their functional brethren.</p></blockquote>
+
+<p>From the abstract mathematical theory of functions comes a variety of interesting concepts that have broad application and use in functional computing.
+For example, functions can take other functions as arguments, and functions can return other functions as results.<br/>
+This ability results in flexible and powerful mechanisms that enable us to implement ideas simply and elegantly &#8211; ideas that are difficult to express in non-functional languages.
+We explore these mechanisms throughout the rest of the text.</p>
+
+<h2>Functional vs. Imperative</h2>
+
+<p>We can think of imperative programming as writing code that describes in exacting detail the steps the software must take to execute a given computation.
+These steps are generally expressed as a combination of statement executions, state changes, loops and conditional branches.</p>
+
+<p>In contrast, functional programming looks at a program as a set of nested functions &#8211; one <em>outer</em> function (the program) calling one or more <em>inner</em> functions to calculate a value to be returned as
+the result of the program.
+Functions take arguments and calculate return values, but do not maintain a <em>state of the program</em> per se.</p>
+
+<p>Most modern programming languages support sufficient logic and data storage as to make them <a href="https://en.wikipedia.org/wiki/Turing-complete">Turing complete</a>.
+This means that in principle they can be used to write programs to solve any <em>computable</em> problem.
+F# is also a Turing complete language. The crux of choosing a language is not then one of capability, but of inherent applicability.</p>
+
+<p>F# offers some advantages over other languages when working on certain classes of problems.
+Some general strengths of F# are as follows:</p>
+
+<ul>
+<li>The signal-to-noise ratio is high. F# is economically expressed, e.g., favoring whitespace over other grouping symbols. As a result, your code ends up being quite succinct.</li>
+<li>Powerful matching logic based not only on Boolean values but the <em>shape</em> and type of the data.</li>
+<li>Built-in support for <em>lazy evaluation</em> of expressions.</li>
+<li>Built-in support for writing thread-safe and asynchronous applications very simply via asynchronous workflows.</li>
+</ul>
+
+
+<p>To help make things a little more concrete, and whet your appetite for the material to come,
+let&#8217;s consider a few examples that help contrast how we&#8217;d look at and solve the same problem from the imperative vs. the functional perspective.</p>
+
+<h3>Example 1: Filtering a List</h3>
+
+<p>Let&#8217;s suppose we have a list of 10000 employee records in a list, and we want to find all the employees who salary equals or exceeds 100,000 dollars.
+Taking the imperative approach, we would most likely write a for- or while-style loop, examining each employee&#8217;s salary to see if it met our criteria.
+For each employee meeting the criteria, we would append the record to a growing list of matches. As you can see, we delineate each and every step in detail.<br/>
+In contrast, from a functional perspective, we would describe this solution as applying a filter (function) to a list with the goal of producing a new resulting list.</p>
+
+<h3>Example 2: Downloading Files Asynchronously</h3>
+
+<p>Asynchronous and parallel programming are difficult to do and even more difficult to get right.
+For example, to asynchronously download HTML pages from the Web via imperative languages requires us to create HTTP channels, issue asynchronous calls,
+write completion routines, and manage failures.
+Depending on the implementation, we may need to also manage our own threads.
+This results in a lot of complex, error-prone code.
+While we can&#8217;t escape having to perform these tasks in some way, we can manage them much more succinctly and rigorously in functional languages by
+structuring and sequencing the calls using a concept called workflows.</p>
+
+<h3>Example 3: Customizing Algorithms</h3>
+
+<p>A classic problem that functional languages address elegantly is that of arbitrary value comparison.
+When your program needs to sort or compare values, it needs a mechanism to determine whether two values are <em>equal</em> or
+if one value is <em>less than</em> the other.
+When using naturally ordered elements, such as numbers or letters, the natural ordering applies.
+In many business-style programs, however, we need to compare elements that have no natural ordering, e.g., Employees, Automobiles, Tickets, Movies, Concerts, etc.
+In these types of applications, it&#8217;s extremely convenient to supply a comparison or sorting function that can be subsequently executed against two elements.
+This is one of the most powerful capabilities of functional programming &#8211; the ability to not only pass and return simple values, but the ability to pass and return functions.</p>
+
+<p>To solve this problem in a functional language, you merely pass the main comparison function a <em>sort function</em> that it can use to compare two elements.
+Depending on the context of the application, or the types being sorted, the program can pass along different <em>sort functions</em> without changing the main routine whatsoever.
+Functional languages tend to exhibit this compositionality in most aspects of their design and, ahem, function.</p>
+
+<p>To address this problem in traditional imperative languages, we&#8217;d need to resort to function pointers or similar constructs.
+Again, this is possible to do, but not as clean or elegant as it can be.
+We should note here that C# now ships with some functional constructs, including anonymous functions and lambda expressions, which help to elegantly address this type of problem.</p>
+
+<h3>Example 4: Creating Infinite Sequences</h3>
+
+<p>There are certain data sets that are <em>naturally infinite</em>, e.g., the set of all prime numbers, making their complete calculation impossible.
+Functional languages employ mechanisms such as lazy evaluation and delayed computation to make infinite sets both representable and efficiently computed in on-demand fashion.
+Again, while you can accomplish the same things in non-functional languages, the imperative implementations tend to be <em>less natural</em> and more convoluted.</p>
+
+<h2>What Problem Spaces are Naturally Addressed by Functional Programming?</h2>
+
+<p>Growing up, I&#8217;d occasionally help my dad fix things around the house, paint, etc., and from the many things he taught me, <em>the right tool for the job</em> stands out clearly.
+When faced with a problem, you need to consider what you have in your <em>toolbox</em> and decide the best way to solve it.
+Certain problems can be solved easily with a hammer, whereas with others you need a saw. You need to apply the same thought process to choosing programming paradigms and the languages that support them.</p>
+
+<p>Functional programming is appropriate for applications that exhibit one or more of the following characteristics:
+require significant computation (compute-bound) as they can be parallelized easily, are themselves parallel in nature,
+can benefit from asynchronous calls, need to be provable, or require sophisticated pattern matching.
+This means that functional programs are not generally applicable to typical line-of-business applications that deal with objects and their state over time;
+however, there may be portions of those programs, e.g., portfolio basket optimization for fixed-income securities,
+that would benefit greatly from using functionally-based libraries.<br/>
+We typically see functional programming applied to image processing, machine algebra, lexing and parsing, artificial intelligence, and data mining.</p>
+
+<h2>Why Should I Care About Functional Programming?</h2>
+
+<p>While you can develop concurrent, scalable and asynchronous software without embracing functional programming, it&#8217;s simpler, safer, and easier to use the right tool for the job.
+Functional programming enables you to take advantage of multi-core systems, develop robust concurrent algorithms, parallelize compute-intensive algorithms,
+and to readily leverage the growing number of cloud computing platforms.</p>
+
+<p>In addition, if you&#8217;ve not already explored non-imperative programming, it&#8217;s a great way to expand your problem solving skills and your horizons.
+The new concepts that you&#8217;ll learn will help you to look at many problems from a different perspective and will help you to become a better and more insightful OO programmer.</p>
+
+<p>A note of caution: I am not here to convince you how wonderful functional programming is, or how it will change your life.
+It is a tool &#8211; nothing more, nothing less &#8211; that helps to solve a certain class of problems.
+In this book, we will explore and explain these types of problems, and point out why functional programming applies.</p>
+
+<p>We will explore functional concepts in depth in Chapter 8, Functions and Functional Concepts.<br/>
+To build up to that, we will first study F#&#8217;s syntax, primitive data types, control flow structures, loops, and basic collections.</p>
+
+<p>Note: Each chapter ends with a What You Need to Know section, which is the thumbnail summary of the topics covered. Here&#8217;s one now&#8230;</p>
+
+<h2>What You Need to Know</h2>
+
+<ul>
+<li>Functional programming is a way to implement software solutions. We contrast it with imperative and OO programming.</li>
+<li>Functional programs implement computation as nested and successive evaluation of functions.</li>
+<li>Functional programming languages discourage side effects.  Pure functional languages don&#8217;t allow them.</li>
+<li>Pure functional programming languages like Haskell can be difficult to use.  F# is an impure functional or multi-paradigm language and has flexibility when you need it.</li>
+<li>By encouraging functional programming principles, F# makes writing concurrent, scalable, asynchronous applications simpler than writing these same applications using imperative and/or OO languages.</li>
+</ul>
+
+
+<ul style="list-style:none">
+<li class="right">
+<a href="\fsurvival\next">next</a>
+</li>
+<li style="float: right">
+ | 
+</li>
+    <li class="right">
+<a href="\fsurvival\introduction">previous</a>
+    </li>
+    <li style="float:right">
+    |
+    </li>
+    <li class="right">
+    <a href="\fsurvival\toc">Main</a>    
+    </li>
+</ul>
+
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bdurrani.github.com/fsurvival/whatisfunctional/index.html" data-via="" data-counturl="http://bdurrani.github.com/fsurvival/whatisfunctional/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Bilal Durrani -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My blog]]></title>
-  <link href="http://bilal33.github.com/atom.xml" rel="self"/>
-  <link href="http://bilal33.github.com/"/>
-  <updated>2012-06-24T18:04:56-04:00</updated>
-  <id>http://bilal33.github.com/</id>
+  <link href="http://bdurrani.github.com/atom.xml" rel="self"/>
+  <link href="http://bdurrani.github.com/"/>
+  <updated>2012-06-28T18:12:18-04:00</updated>
+  <id>http://bdurrani.github.com/</id>
   <author>
     <name><![CDATA[Bilal Durrani]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Where has all the money in the world gome]]></title>
-    <link href="http://bilal33.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone/"/>
+    <link href="http://bdurrani.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone/"/>
     <updated>2012-06-23T22:52:00-04:00</updated>
-    <id>http://bilal33.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone</id>
+    <id>http://bdurrani.github.com/blog/2012/06/23/where-has-all-the-money-in-the-world-gone</id>
     <content type="html"><![CDATA[<p>I found this incredibly detailed <a href="http://www.reddit.com/r/finance/comments/utf5u/where_has_all_the_money_in_the_world_gone/">post</a> about the origins of money on reddit that deserved to be repeated.
 The commentor <a href="http://www.reddit.com/user/otherwiseyep">otherwiseyep</a> has to break down the explation over a series of comments, so here I present his entire response in a easier to read format.
 Again, I am taking no credit for this, I am merely repeating his reponse.</p>
